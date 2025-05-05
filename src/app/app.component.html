@@ -7,45 +7,7 @@
 <!-- * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-
-<main class="main-container">
-  <header class="header" style="">
-    <h1 class="header-title">Family Tree Builder</h1>
-    <nav class="nav">
-      <a href="#about" class="nav-link">About</a>
-      <a href="#features" class="nav-link">Features</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </nav>
-  </header>
-  
-  <h1 class="title">Hello Creator!</h1>
-  <p class="subtitle">Type your name below to start building your family tree 🌳</p>
-  <input 
-    type="text" 
-    placeholder="First Name" 
-    class="text-input"
-    [(ngModel)]="firstName"
-  />
-  <input 
-    type="text" 
-    placeholder="Last Name" 
-    class="text-input"
-    [(ngModel)]="lastName"
-  />
-  <br>
-  <button 
-    class="start-button" (click)="createCreator()">Submit</button>
-
-    <footer class="footer">
-      <p class="footer-text">© 2023 Family Tree Builder. All rights reserved.</p>
-    </footer>
-</main>
-
-
-
-<style>
-  
-</style>
+<router-outlet/>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
@@ -54,6 +16,3 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-
-<router-outlet />
