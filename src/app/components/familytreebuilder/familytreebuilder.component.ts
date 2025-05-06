@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CreatorService } from '../../services/creator.service';
 
 @Component({
   selector: 'app-familytreebuilder',
@@ -7,8 +8,20 @@ import { Component } from '@angular/core';
   styleUrl: './familytreebuilder.component.css'
 })
 export class FamilytreebuilderComponent {
-  //Write Onload method
+
+  constructor(private _creatorService: CreatorService) { }
+
   ngOnInit() {
-    console.log('Family Tree Builder Component Loaded');
+    const urlParams = new URLSearchParams(globalThis.window.location.search);
+    const creatorId = urlParams.get('creatorId');
+
+    if (creatorId) {
+      this._creatorService.GetCreatorById(creatorId).then((response) => {
+      }).catch((error) => {
+        console.error('Error:', error);
+      });
+    } else {
+      console.error('No creator ID found in URL');
+    }
   }
 }

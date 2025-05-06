@@ -25,9 +25,8 @@ export class CreatorService {
   async GetCreatorById(creatorId: string): Promise<any> {
     try {
       const response = await 
-              this.http.get('https://localhost:7159/api/getcreatorbyid?creatorId=' + creatorId)
+              this.http.get('https://localhost:7159/api/getcreator/' + creatorId)
               .toPromise();
-      console.log('Creator retrieved successfully:', response);
       return response;
     } catch (error) {
       console.error('Error retrieving creator:', error);
