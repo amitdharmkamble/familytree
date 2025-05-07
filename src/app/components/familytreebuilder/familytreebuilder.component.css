@@ -1,0 +1,21 @@
+.card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+/* Add styles for the card body */
+.card-body {
+  padding: 1.25rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+}
+/* Add styles for the card footer */
+.card-footer {
+  padding: 0.75rem 1.25rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  text-align: right;
+}
+/* Add styles for the button */

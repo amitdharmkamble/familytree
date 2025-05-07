@@ -92,7 +92,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "C:/Users/anarayandharmkamble/FamilyTree/familytree/node_modules/d3/dist/d3.js"
+            ]
           }
         }
       }

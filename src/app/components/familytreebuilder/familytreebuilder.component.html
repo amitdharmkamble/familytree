@@ -1,1 +1,16 @@
-<p>familytreebuilder works!</p>
+<div class="card">
+  <div class="card-header">
+    <h5>Creator Details</h5>
+  </div>
+  <div class="card-body">
+    <p><strong>First Name:</strong> {{ creator.firstName }}</p>
+    <p><strong>Last Name:</strong> {{ creator.lastName }}</p>
+    <p><strong>Date Of Birth:</strong> {{ creator.dateOfBirth }}</p>
+  </div>
+    <div class="card-footer">
+        <button class="btn btn-primary" >Edit</button>
+        <button class="btn btn-danger" >Delete</button>
+    </div>
+</div>
+
+<app-dtree-family-tree></app-dtree-family-tree>
